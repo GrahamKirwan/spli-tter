@@ -9,7 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="main.css">
   
-  <title>Frontend Mentor | Tip calculator app</title>
+  <title>Tip calculator app</title>
 
 </head>
 <body>
@@ -21,35 +21,55 @@
     <div class="calculator">
       <div class="calculator-left">
         <h2>Bill</h2>
-        <input type="text">
+        <div class="input-container">
+          <img src="images/icon-dollar.svg" alt="">
+          <input type="text" placeholder="0">
+        </div>
+        <h3>Select Tip %</h3>
+        <div class="percentages-container">
+          <div class="percent">5%</div>
+          <div class="percent">10%</div>
+          <div class="percent">15%</div>
+          <div class="percent">25%</div>
+          <div class="percent">50%</div>
+          <input class="percent percent-custom" type="text" placeholder="Custom">
+        </div>
+        <h3>Number of People</h3>
+        <div class="input-container">
+          <img src="images/icon-person.svg" alt="">
+          <input type="text" placeholder="0">
+        </div>
+        
       </div>
       <div class="calculator-right">
-        
+        <div class="numbers">
+          <div class="tip-amount">
+            <div class="tip-amount-text">
+              <p>Tip Amount</p>
+              <span>/ person</span>
+            </div>
+            <div class="tip-amount-num">
+              <p>$0.00</p>
+            </div>
+          </div>
+          <div class="total">
+            <div class="total-amount-text">
+              <p>Total</p>
+              <span>/ person</span>
+            </div>
+            <div class="total-amount-num">
+              <p>$0.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="reset">
+          <div class="reset-button" disabled>RESET</div>
+        </div>
       </div>
     </div>
   </div>
-  
 
-  <!-- Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-   -->
+  <script src="main.js"></script>
   
 </body>
 </html>
