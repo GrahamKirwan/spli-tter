@@ -23,21 +23,21 @@
         <h2>Bill</h2>
         <div class="input-container">
           <img src="images/icon-dollar.svg" alt="">
-          <input type="text" placeholder="0">
+          <input type="text" placeholder="0" id="bill-amount">
         </div>
         <h3>Select Tip %</h3>
         <div class="percentages-container">
-          <div class="percent">5%</div>
-          <div class="percent">10%</div>
-          <div class="percent">15%</div>
-          <div class="percent">25%</div>
-          <div class="percent">50%</div>
+          <div class="percent percent5" value=".05">5%</div>
+          <div class="percent percent10" value=".1">10%</div>
+          <div class="percent percent15 active" value=".15">15%</div>
+          <div class="percent percent25" value=".25">25%</div>
+          <div class="percent percent50" value=".5">50%</div>
           <input class="percent percent-custom" type="text" placeholder="Custom">
         </div>
         <h3>Number of People</h3>
         <div class="input-container">
           <img src="images/icon-person.svg" alt="">
-          <input type="text" placeholder="0">
+          <input type="text" placeholder="0" id="num-people">
         </div>
         
       </div>
@@ -49,7 +49,7 @@
               <span>/ person</span>
             </div>
             <div class="tip-amount-num">
-              <p>$0.00</p>
+              <p id="tip-amount">$0.00</p>
             </div>
           </div>
           <div class="total">
@@ -58,7 +58,7 @@
               <span>/ person</span>
             </div>
             <div class="total-amount-num">
-              <p>$0.00</p>
+              <p id="total-amount">$0.00</p>
             </div>
           </div>
         </div>

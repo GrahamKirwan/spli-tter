@@ -116,6 +116,11 @@ body {
     width: 30%;
 }
 
+.active {
+    background-color: var(--Strong-cyan);
+    color: var(--Very-dark-cyan);
+}
+
 .percent:hover {
     background-color: var(--Strong-cyan);
     color: var(--Very-dark-cyan);
@@ -142,9 +147,6 @@ body {
     justify-content: space-between;
 }
 
-.numbers {
-    /* background-color: red; */
-}
 
 .tip-amount {
     display: flex;
@@ -178,8 +180,8 @@ body {
 .reset-button {
     width: 100%;
     height: 50px;
-    background-color: var(--Strong-cyan);
-    color: var(--Very-dark-cyan);
+    background-color: var(--Dark-grayish-cyan);
+    color: hsla(183, 100%, 15%, 0.397);
     border-radius: 5px;
     display: flex;
     justify-content: center;
@@ -187,4 +189,9 @@ body {
     font-weight: 700;
     cursor: pointer;
     font-size: 20px;
+}
+
+.reset-button:hover {
+    background-color: var(--Strong-cyan);
+    color: var(--Very-dark-cyan);
 }
